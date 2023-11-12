@@ -1,0 +1,139 @@
+.services {
+  text-align: center;
+  background: hsl(0, 0%, 96%);
+  margin-block-end: 100px;
+  padding-block: 100px;
+}
+
+.services-items {
+  width: 45%;
+  margin: auto;
+  padding: 25px;
+  background: white;
+  margin-block: 35px;
+  border-radius: 10px;
+  transition: 0.35s ease;
+  overflow: hidden;
+}
+
+.services-items:nth-child(even) {
+  width: 50%;
+}
+
+.services-items:hover {
+  transform: scale(1.1);
+  box-shadow: 0 35px 65px -10px hsla(0, 0%, 0%, 0.1);
+}
+
+.services h1 {
+  max-width: 500px;
+  margin: auto;
+  margin-block-end: 50px;
+}
+
+.services-items::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 128, 0, 0.38);
+  transform: scaleX(0);
+  width: 100%;
+  transition: 0.35s ease;
+}
+
+.services-items:hover::before {
+  transform: scaleX(1);
+}
+
+.progress {
+  max-width: 500px;
+  margin: auto;
+  margin-block-start: 70px;
+}
+
+.progress > p:first-child {
+  color: hsl(173, 60%, 47%);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.progress h1 span {
+  color: #ff8086;
+}
+
+.progress-body {
+  margin: auto;
+  /* width: 80%; */
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-item p:first-child {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.progress-item-1 {
+  width: 100%;
+  height: 7px;
+  margin-block-start: 15px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Styles for screens with a minimum width of 556px */
+@media (max-width: 556px) {
+  /* Add your styles specific to this screen size here */
+
+  .progress-body {
+    width: 80%;
+  }
+
+  .services-items {
+    width: 70%;
+    margin-block: 20px;
+  }
+
+  .services-items:nth-child(even) {
+    width: 75%;
+  }
+}
+
+@media (min-width: 556px) and (max-width: 782px) {
+  /* Add your styles specific to this screen size here */
+  .progress-body {
+    width: 80%;
+  }
+
+  .services-items {
+    width: 70%;
+    margin-block: 20px;
+  }
+
+  .services-items:nth-child(even) {
+    width: 75%;
+  }
+}
+
+@media (min-width: 783px) {
+  /* Add your styles specific to this screen size here */
+  .services-items {
+    width: 45%;
+    margin-block: 35px;
+  }
+
+  .services-items:nth-child(even) {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Add your styles specific to this screen size here */
+}

@@ -1,0 +1,97 @@
+.achievements-body {
+  margin-block-end: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.achievements {
+  margin: auto;
+}
+
+.achievements ul {
+  background: hsl(220, 20%, 97%);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding-inline: 60px;
+  padding-block: 50px;
+  border-radius: 10px;
+}
+
+.achievements ul li p {
+  padding-block: 5px;
+}
+
+.achievements ul li p:first-child {
+  font-size: 40px;
+  font-weight: 900;
+  color: hsl(170, 75%, 41%);
+}
+
+.achievements ul li p:last-child {
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+}
+
+/* Styles for screens with a minimum width of 556px */
+@media (max-width: 556px) {
+  /* Add your styles specific to this screen size here */
+  .achievements ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 0;
+    padding-block: 20px;
+    /* margin-inline: 20px; */
+  }
+
+  .achievements ul li {
+    margin-block: 10px;
+    margin-inline: 15px;
+  }
+
+  .achievements ul li p:first-child {
+    font-size: 15px;
+  }
+
+  .achievements ul li p:last-child {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .achievements ul li p {
+    padding-block: 2px;
+  }
+}
+
+@media (min-width: 556px) and (max-width: 782px) {
+  /* Add your styles specific to this screen size here */
+  .achievements ul {
+    padding-inline: 5px;
+    padding-block: 30px;
+    margin-inline: 50px;
+  }
+
+  .achievements ul li p:first-child {
+    font-size: 20px;
+  }
+
+  .achievements ul li p:last-child {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .achievements ul li p {
+    padding-block: 5px;
+  }
+}
+
+@media (min-width: 783px) {
+  /* Add your styles specific to this screen size here */
+}
+
+@media (min-width: 1200px) {
+  /* Add your styles specific to this screen size here */
+}

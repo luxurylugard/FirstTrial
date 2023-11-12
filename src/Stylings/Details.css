@@ -1,0 +1,119 @@
+.details-body {
+  padding-block: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details p {
+  color: hsl(233, 50%, 64%);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.details h1 {
+  max-width: 500px;
+  font-size: 35px;
+  margin-block-start: 20px;
+  text-align: center;
+}
+
+.expandable-layout {
+  width: 80%;
+  margin-block-start: 50px;
+}
+
+.toggle-btn-body {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+  font-weight: 700;
+  transition: 0.35s ease;
+  text-shadow: 0 0 55px hsl(351, 83%, 61%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  margin-block-start: 50px;
+}
+
+.expandable {
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.35s ease;
+  background: hsl(233, 50%, 64%);
+  padding-block-end: 20px;
+  padding-inline-end: 20px;
+  padding-inline-start: 30px;
+  border-radius: 10px;
+  margin-block-start: 20px;
+  cursor: pointer;
+}
+
+.expandable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 35px 65px -10px hsla(0, 0%, 0%, 0.3);
+}
+
+.expandable-grid-items {
+  width: 250vh;
+}
+
+/* Styles for screens with a minimum width of 556px */
+@media (max-width: 556px) {
+  /* Add your styles specific to this screen size here */
+  .expandable-layout {
+    width: 100%;
+  }
+
+  .expandable {
+    border-radius: 0;
+  }
+
+  .details h1 {
+    max-width: 300px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 556px) and (max-width: 782px) {
+  /* Add your styles specific to this screen size here */
+  .expandable-layout {
+    width: 70%;
+  }
+
+  .details h1 {
+    max-width: 400px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 783px) {
+  /* Add your styles specific to this screen size here */
+  .expandable-layout {
+    width: 70%;
+  }
+
+  .details h1 {
+    max-width: 450px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Add your styles specific to this screen size here */
+  .expandable-layout {
+    width: 80%;
+  }
+
+  .details h1 {
+    max-width: 500px;
+    font-size: 35px;
+  }
+}
